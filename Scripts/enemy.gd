@@ -59,4 +59,3 @@ func _on_body_entered(body):
 
 func _on_visible_on_screen_notifier_2d_screen_entered():
 	set_process(true)
-
