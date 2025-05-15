@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://bei1c0pe6xtcd"]
+
+[ext_resource type="Script" uid="uid://qs26atwxhfuu" path="res://Scripts/pipe.gd" id="1_1ohs0"]
+[ext_resource type="Texture2D" uid="uid://vha14320l77l" path="res://Assets/Elements/Escultura01.png" id="2_hnit7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_p1buf"]
+radius = 6.0
+
+[node name="Sculpture01" type="StaticBody2D"]
+z_index = -1
+texture_repeat = 2
+collision_layer = 16
+collision_mask = 5
+script = ExtResource("1_1ohs0")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(4.76837e-07, 8.5)
+scale = Vector2(0.0536585, 0.0538194)
+texture = ExtResource("2_hnit7")
+region_enabled = true
+region_rect = Rect2(0, 0, 410.445, 576.578)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 10)
+shape = SubResource("CapsuleShape2D_p1buf")
+debug_color = Color(0.92549, 0.219608, 0.407843, 0.419608)
