@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpvjca8iwgcnq"
-path="res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"
+uid="uid://di66xmobg4ms7"
+path="res://.godot/imported/esculturagaucho2.png-acd25412facb60478eaeba8408004ab1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/buttonIniciar2.png"
-dest_files=["res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"]
+source_file="res://Assets/Images/esculturagaucho2.png"
+dest_files=["res://.godot/imported/esculturagaucho2.png-acd25412facb60478eaeba8408004ab1.ctex"]
 
 [params]
 

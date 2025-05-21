@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpvjca8iwgcnq"
-path="res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"
+uid="uid://df3ueytqfwfr4"
+path="res://.godot/imported/Bombacha.png-c7200cc05df5af17d3b4aaa0b5eb210e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/buttonIniciar2.png"
-dest_files=["res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"]
+source_file="res://Assets/Images/Bombacha.png"
+dest_files=["res://.godot/imported/Bombacha.png-c7200cc05df5af17d3b4aaa0b5eb210e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpvjca8iwgcnq"
-path="res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"
+uid="uid://c37cdi8ly0irm"
+path="res://.godot/imported/Espeto.png-703813e0f35afbc7562d80888500aea3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/buttonIniciar2.png"
-dest_files=["res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"]
+source_file="res://Assets/Images/Espeto.png"
+dest_files=["res://.godot/imported/Espeto.png-703813e0f35afbc7562d80888500aea3.ctex"]
 
 [params]
 

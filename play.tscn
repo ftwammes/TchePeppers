@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0v5df3610qok"]
+
+[ext_resource type="Texture2D" uid="uid://c83hwkswceolp" path="res://Assets/images/ChatGPT Image 8 de mai. de 2025, 20_34_52.png" id="1_yuxfv"]
+[ext_resource type="Texture2D" uid="uid://b3dbwsixsamiv" path="res://Assets/images/buttonIniciar.png" id="2_2jglr"]
+[ext_resource type="Texture2D" uid="uid://dpvjca8iwgcnq" path="res://Assets/images/buttonIniciar2.png" id="3_ca36m"]
+[ext_resource type="Script" uid="uid://dxv7d71aui8io" path="res://play_button.gd" id="4_2jglr"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Fundo" type="Sprite2D" parent="."]
+position = Vector2(578.5, 325)
+scale = Vector2(0.754557, 0.640625)
+texture = ExtResource("1_yuxfv")
+
+[node name="Play_Button" type="TextureButton" parent="Fundo"]
+offset_left = -261.0
+offset_top = -207.0
+offset_right = 351.0
+offset_bottom = 201.0
+texture_normal = ExtResource("2_2jglr")
+texture_hover = ExtResource("3_ca36m")
+script = ExtResource("4_2jglr")

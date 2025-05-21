@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpvjca8iwgcnq"
-path="res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"
+uid="uid://c3378srupciuk"
+path="res://.godot/imported/gaucho.png-526b6e12cd139f334551d1d5570f2c90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/buttonIniciar2.png"
-dest_files=["res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"]
+source_file="res://Assets/Images/gaucho.png"
+dest_files=["res://.godot/imported/gaucho.png-526b6e12cd139f334551d1d5570f2c90.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpvjca8iwgcnq"
-path="res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"
+uid="uid://tr83dlw2m38d"
+path="res://.godot/imported/gauchoMovimento (2).png-25f9c489bbbe1a19d42e108a4add2d3b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/buttonIniciar2.png"
-dest_files=["res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"]
+source_file="res://Assets/Images/gauchoMovimento (2).png"
+dest_files=["res://.godot/imported/gauchoMovimento (2).png-25f9c489bbbe1a19d42e108a4add2d3b.ctex"]
 
 [params]
 

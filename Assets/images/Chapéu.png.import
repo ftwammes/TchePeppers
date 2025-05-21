@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpvjca8iwgcnq"
-path="res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"
+uid="uid://dxm8043flrk6q"
+path="res://.godot/imported/Chapéu.png-4083375eba3aacf4476903b98cdf35b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/buttonIniciar2.png"
-dest_files=["res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"]
+source_file="res://Assets/Images/Chapéu.png"
+dest_files=["res://.godot/imported/Chapéu.png-4083375eba3aacf4476903b98cdf35b8.ctex"]
 
 [params]
 

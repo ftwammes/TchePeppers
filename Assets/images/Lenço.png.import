@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpvjca8iwgcnq"
-path="res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"
+uid="uid://dwa26exkonygf"
+path="res://.godot/imported/Lenço.png-b02f3c0aed6448fffd764d1a308e9646.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/buttonIniciar2.png"
-dest_files=["res://.godot/imported/buttonIniciar2.png-2c3b9289156de289fa03438ffa60a85d.ctex"]
+source_file="res://Assets/Images/Lenço.png"
+dest_files=["res://.godot/imported/Lenço.png-b02f3c0aed6448fffd764d1a308e9646.ctex"]
 
 [params]
 
