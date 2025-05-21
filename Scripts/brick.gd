@@ -13,7 +13,6 @@ func bump(player_mode: Player.PlayerMode):
 		set_collision_layer_value(5, false)
 		gpu_particles_2d.emitting = true
 		sprite_2d.visible = false
-		super.check_for_enemy_collision()
 
 func _on_gpu_particles_2d_finished():
 	queue_free()

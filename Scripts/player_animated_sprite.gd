@@ -35,12 +35,6 @@ func _on_animation_finished():
 				get_parent().player_mode = Player.PlayerMode.SMALL
 			Player.PlayerMode.SMALL:
 				get_parent().player_mode = Player.PlayerMode.BIG
-	if animation == "small_to_shooting" || animation == "big_to_shooting":
-		reset_player_properties()
-		get_parent().player_mode = Player.PlayerMode.SHOOTING
-	
-	if animation == "shoot":
-		get_parent().set_physics_process(true)
 
 func reset_player_properties():
 	offset = Vector2.ZERO
@@ -49,7 +43,7 @@ func reset_player_properties():
 	frame_count = 0
 
 func _on_frame_changed():
-	if animation == "small_to_big" || animation == "small_to_shooting":
+	if animation == "small_to_big":
 		var player_mode = get_parent().player_mode
 		frame_count += 1
 		

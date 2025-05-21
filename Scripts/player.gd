@@ -9,23 +9,21 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 enum PlayerMode {
 	SMALL,
-	BIG,
-	SHOOTING
+	BIG
 }
 
 const PIPE_ENTER_THRESHOLD = 10
 
 #On ready
 const POINTS_LABEL_SCENE = preload("res://Scenes/points_label.tscn")
-const SMALL_MARIO_COLLISION_SHAPE = preload("res://Resources/CollisionShapes/small_mario_collision_shape.tres")
-const BIG_MARIO_COLLISION_SHAPE = preload("res://Resources/CollisionShapes/big_mario_collision_shape.tres")
-const FIREBALL_SCENE = preload("res://Scenes/fireball.tscn")
+const SMALL_PLAYER_COLLISION_SHAPE = preload("res://Resources/CollisionShapes/small_player_collision_shape.tres")
+const BIG_PLAYER_COLLISION_SHAPE = preload("res://Resources/CollisionShapes/big_player_collision_shape.tres")
+
 # References
 @onready var animated_sprite_2d = $AnimatedSprite2D as PlayerAnimatedSprite
 @onready var area_2d = $Area2D
 @onready var area_collision_shape = $Area2D/AreaCollisionShape
 @onready var body_collision_shape = $BodyCollisionShape
-@onready var shooting_point = $ShootingPoint
 @onready var slide_down_finished_position = $"../slide_down_finished_position"
 @onready var land_down_marker = $"../LandDownMarker" as Marker2D
 
@@ -87,10 +85,6 @@ func _physics_process(delta):
 		velocity.x = lerpf(velocity.x, speed * direction, run_speed_damping * delta)
 	else: 
 		velocity.x = move_toward(velocity.x, 0, speed * delta)
-	
-	if Input.is_action_just_pressed("shoot") && player_mode == PlayerMode.SHOOTING:
-		shoot()
-	else:
 		animated_sprite_2d.trigger_animation(velocity, direction, player_mode)
 	
 	var collision = get_last_slide_collision()
@@ -110,45 +104,7 @@ func _process(delta):
 			land_down()
 
 func _on_area_2d_area_entered(area):
-	if area is Enemy:
-		handle_enemy_collision(area)
-	if area is Shroom:
-		handle_shroom_collision(area)
-		area.queue_free()
-	if area is ShootingFlower:
-		handle_flower_collision()
-		area.queue_free()
-
-func handle_enemy_collision(enemy: Enemy):
-	if enemy == null && is_dead:
-		return
-	var level_manager = get_tree().get_first_node_in_group("level_manager")
-	if is_instance_of(enemy, Koopa) and (enemy as Koopa).in_a_shell:
-		(enemy as Koopa).on_stomp(global_position)
-		spawn_points_label(enemy)
-		level_manager.on_points_scored(100)
-	else:
-		var angle_of_collision = rad_to_deg(position.angle_to_point(enemy.position))
-		
-		if angle_of_collision > min_stomp_degree && max_stomp_degree > angle_of_collision:
-			enemy.die()
-			on_enemy_stomped()
-			spawn_points_label(enemy)
-			level_manager.on_points_scored(100)
-		else:
-			die()
-			
-func handle_shroom_collision(area: Node2D):
-	if player_mode == PlayerMode.SMALL:
-		set_physics_process(false)
-		animated_sprite_2d.play("small_to_big")	
-		set_collision_shapes(false)
-
-func handle_flower_collision():
-	set_physics_process(false)
-	var animation_name = "small_to_shooting" if player_mode == PlayerMode.SMALL else "big_to_shooting"
-	animated_sprite_2d.play(animation_name)
-	set_collision_shapes(false)
+	return
 
 func spawn_points_label(enemy):
 	var points_label = POINTS_LABEL_SCENE.instantiate()
@@ -190,7 +146,7 @@ func handle_movement_collision(collision: KinematicCollision2D):
 			handle_pipe_collision()
 			
 func set_collision_shapes(is_small: bool):
-	var collision_shape = SMALL_MARIO_COLLISION_SHAPE if is_small else BIG_MARIO_COLLISION_SHAPE
+	var collision_shape = SMALL_PLAYER_COLLISION_SHAPE if is_small else BIG_PLAYER_COLLISION_SHAPE
 	area_collision_shape.set_deferred("shape", collision_shape)
 	body_collision_shape.set_deferred("shape", collision_shape)
 
@@ -200,15 +156,6 @@ func big_to_small():
 	var animation_name = "small_to_big" if player_mode == PlayerMode.BIG else "small_to_shooting"
 	animated_sprite_2d.play(animation_name, 1.0, true)
 	set_collision_shapes(true)
-
-func shoot():
-	animated_sprite_2d.play("shoot")
-	set_physics_process(false)
-	
-	var fireball = FIREBALL_SCENE.instantiate()
-	fireball.direction = sign(animated_sprite_2d.scale.x)
-	fireball.global_position = shooting_point.global_position
-	get_tree().root.add_child(fireball)
 
 func handle_pipe_collision():
 	set_physics_process(false)
