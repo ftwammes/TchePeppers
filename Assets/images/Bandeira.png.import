@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6e3gb7ni8r12"
-path="res://.godot/imported/Bandeira.png-ac5b73862ff669aea5baca26ac9c47fe.ctex"
+path="res://.godot/imported/Bandeira.png-c80a51689d1fec4d473228863a10191d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/Bandeira.png"
-dest_files=["res://.godot/imported/Bandeira.png-ac5b73862ff669aea5baca26ac9c47fe.ctex"]
+source_file="res://Assets/images/Bandeira.png"
+dest_files=["res://.godot/imported/Bandeira.png-c80a51689d1fec4d473228863a10191d.ctex"]
 
 [params]
 

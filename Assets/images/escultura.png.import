@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c2qsaj5c8bb31"
-path="res://.godot/imported/escultura.png-c855472a5dd49c1d242d5a26417b8790.ctex"
+path="res://.godot/imported/escultura.png-24c6b8480ba3876cc8afc4bd6944eb05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/escultura.png"
-dest_files=["res://.godot/imported/escultura.png-c855472a5dd49c1d242d5a26417b8790.ctex"]
+source_file="res://Assets/images/escultura.png"
+dest_files=["res://.godot/imported/escultura.png-24c6b8480ba3876cc8afc4bd6944eb05.ctex"]
 
 [params]
 

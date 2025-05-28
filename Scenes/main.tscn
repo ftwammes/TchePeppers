@@ -14,11 +14,11 @@
 [ext_resource type="Texture2D" uid="uid://clh4o85nqf188" path="res://Assets/Sprites/Cloud2.png" id="13_mpiqk"]
 [ext_resource type="Texture2D" uid="uid://brrum5522waxt" path="res://Assets/Sprites/Cloud3.png" id="14_vx0fg"]
 [ext_resource type="Texture2D" uid="uid://ldf8fweos6xc" path="res://Assets/Sprites/Hill1.png" id="15_667qv"]
-[ext_resource type="Texture2D" uid="uid://cpj4och0ipdug" path="res://Assets/Sprites/Hill2.png" id="16_17wav"]
-[ext_resource type="Texture2D" uid="uid://bbd1cchxb20u2" path="res://Assets/Sprites/Bush1.png" id="17_4q1f4"]
-[ext_resource type="Texture2D" uid="uid://ggrv7avq2vw" path="res://Assets/Sprites/Bush2.png" id="18_4fjmu"]
-[ext_resource type="Texture2D" uid="uid://tmg1wxwm3k3w" path="res://Assets/Images/ctg.png" id="19_fevyy"]
-[ext_resource type="Texture2D" uid="uid://j6grr7g688fn" path="res://Assets/Sprites/Bush3.png" id="19_spf1u"]
+[ext_resource type="Texture2D" uid="uid://cqa0hkxo23gkv" path="res://Assets/images/Eucalipto_com_queroquero.png" id="15_gt3je"]
+[ext_resource type="Texture2D" uid="uid://bh6nfjkius1u4" path="res://Assets/images/Arbusto.png" id="15_pdsj5"]
+[ext_resource type="Texture2D" uid="uid://ddll1cc4ebus4" path="res://Assets/images/arbusto_pilchado.png" id="17_ee4r6"]
+[ext_resource type="Texture2D" uid="uid://d4e2jnewdtsvs" path="res://Assets/images/Araucaria.png" id="19_ee4r6"]
+[ext_resource type="Texture2D" uid="uid://tmg1wxwm3k3w" path="res://Assets/images/ctg.png" id="19_fevyy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xjng"]
 texture = ExtResource("1_pdsj5")
@@ -4231,7 +4231,7 @@ position = Vector2(3192, 69)
 [node name="Clouds" type="Node" parent="Decorations"]
 
 [node name="Cloud1" type="Sprite2D" parent="Decorations/Clouds"]
-position = Vector2(-120, -48)
+position = Vector2(-109, -36)
 texture = ExtResource("12_7uet7")
 
 [node name="Cloud4" type="Sprite2D" parent="Decorations/Clouds"]
@@ -4302,13 +4302,15 @@ texture = ExtResource("14_vx0fg")
 
 [node name="Hill1" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(168, 72)
-texture = ExtResource("15_667qv")
+position = Vector2(169, 72)
+scale = Vector2(0.092, 0.062)
+texture = ExtResource("15_pdsj5")
 
 [node name="Hill4" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(656, 72)
-texture = ExtResource("15_667qv")
+position = Vector2(656, 70)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("15_gt3je")
 
 [node name="Hill6" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
@@ -4317,85 +4319,85 @@ texture = ExtResource("15_667qv")
 
 [node name="Hill8" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(2640, 80)
-texture = ExtResource("15_667qv")
+position = Vector2(2645, 71)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("17_ee4r6")
 
 [node name="Hill2" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(-168, 72)
-texture = ExtResource("16_17wav")
+position = Vector2(-169, 73)
+scale = Vector2(0.1045, 0.0605)
+texture = ExtResource("15_pdsj5")
 
 [node name="Hill3" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(536, 80)
-texture = ExtResource("16_17wav")
+position = Vector2(3277, 61)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("17_ee4r6")
 
 [node name="Hill5" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(1384, 72)
-texture = ExtResource("16_17wav")
-
-[node name="Hill7" type="Sprite2D" parent="Decorations/Hills"]
-z_index = -2
-position = Vector2(2304, 72)
-texture = ExtResource("16_17wav")
+position = Vector2(1385, 58)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("19_ee4r6")
 
 [node name="Hill9" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(3296, 80)
-texture = ExtResource("16_17wav")
+position = Vector2(3296, 81)
 
 [node name="Bushes" type="Node" parent="Decorations"]
 
 [node name="Bush1" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
-position = Vector2(8, 72)
-texture = ExtResource("17_4q1f4")
+position = Vector2(19, 60)
+scale = Vector2(0.078, 0.09)
+texture = ExtResource("17_ee4r6")
 
 [node name="Bush9" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
 position = Vector2(2760, 72)
-texture = ExtResource("17_4q1f4")
 
 [node name="Bush10" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
-position = Vector2(3168, 72)
-texture = ExtResource("17_4q1f4")
+position = Vector2(3167, 71)
 
 [node name="Bush2" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
 position = Vector2(400, 72)
-texture = ExtResource("18_4fjmu")
 
 [node name="Bush4" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
-position = Vector2(848, 72)
-texture = ExtResource("18_4fjmu")
+position = Vector2(849, 75)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("15_pdsj5")
 
 [node name="Bush6" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
 position = Vector2(1248, 72)
-texture = ExtResource("18_4fjmu")
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("15_pdsj5")
 
 [node name="Bush8" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
-position = Vector2(2208, 72)
-texture = ExtResource("18_4fjmu")
+position = Vector2(2204, 61)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("15_gt3je")
 
 [node name="Bush3" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
-position = Vector2(-96, 72)
-texture = ExtResource("19_spf1u")
+position = Vector2(-108.25, 55.875)
+scale = Vector2(0.0747548, 0.104167)
+texture = ExtResource("19_ee4r6")
 
 [node name="Bush5" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
 position = Vector2(1088, 72)
-texture = ExtResource("19_spf1u")
 
 [node name="Bush7" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
-position = Vector2(1624, 72)
-texture = ExtResource("19_spf1u")
+position = Vector2(1634, 77)
+scale = Vector2(0.09, 0.09)
+texture = ExtResource("15_pdsj5")
 
 [node name="CTG" type="Sprite2D" parent="."]
 position = Vector2(3350, 42)
@@ -4409,7 +4411,7 @@ position = Vector2(3189, 57)
 position = Vector2(3255, 80)
 
 [node name="Path2D" type="Path2D" parent="."]
-position = Vector2(3189, 65)
+position = Vector2(3189, 30)
 curve = SubResource("Curve2D_px65u")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
