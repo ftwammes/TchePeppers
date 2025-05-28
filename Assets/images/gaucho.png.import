@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c3378srupciuk"
-path="res://.godot/imported/gaucho.png-526b6e12cd139f334551d1d5570f2c90.ctex"
+path="res://.godot/imported/gaucho.png-cd00ed87899805ed7c3f57dc993f9b1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/gaucho.png"
-dest_files=["res://.godot/imported/gaucho.png-526b6e12cd139f334551d1d5570f2c90.ctex"]
+source_file="res://Assets/images/gaucho.png"
+dest_files=["res://.godot/imported/gaucho.png-cd00ed87899805ed7c3f57dc993f9b1f.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://df3ueytqfwfr4"
-path="res://.godot/imported/Bombacha.png-c7200cc05df5af17d3b4aaa0b5eb210e.ctex"
+path="res://.godot/imported/Bombacha.png-bf58c2b0e8cb2fda442fe3bbc69f39d9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/Bombacha.png"
-dest_files=["res://.godot/imported/Bombacha.png-c7200cc05df5af17d3b4aaa0b5eb210e.ctex"]
+source_file="res://Assets/images/Bombacha.png"
+dest_files=["res://.godot/imported/Bombacha.png-bf58c2b0e8cb2fda442fe3bbc69f39d9.ctex"]
 
 [params]
 

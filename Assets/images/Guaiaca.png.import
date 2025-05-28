@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dxmpg4hktbga6"
-path="res://.godot/imported/Guaiaca.png-f19ae6c289b1bb1f826dc5b5e4470cca.ctex"
+path="res://.godot/imported/Guaiaca.png-9a70d28e924d141776d8761fe8e0a191.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/Guaiaca.png"
-dest_files=["res://.godot/imported/Guaiaca.png-f19ae6c289b1bb1f826dc5b5e4470cca.ctex"]
+source_file="res://Assets/images/Guaiaca.png"
+dest_files=["res://.godot/imported/Guaiaca.png-9a70d28e924d141776d8761fe8e0a191.ctex"]
 
 [params]
 

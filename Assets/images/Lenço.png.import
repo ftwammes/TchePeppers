@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwa26exkonygf"
-path="res://.godot/imported/Lenço.png-b02f3c0aed6448fffd764d1a308e9646.ctex"
+path="res://.godot/imported/Lenço.png-3064ef3c61dbb3e8496c516894470409.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/Lenço.png"
-dest_files=["res://.godot/imported/Lenço.png-b02f3c0aed6448fffd764d1a308e9646.ctex"]
+source_file="res://Assets/images/Lenço.png"
+dest_files=["res://.godot/imported/Lenço.png-3064ef3c61dbb3e8496c516894470409.ctex"]
 
 [params]
 

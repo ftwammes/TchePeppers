@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c37cdi8ly0irm"
-path="res://.godot/imported/Espeto.png-703813e0f35afbc7562d80888500aea3.ctex"
+path="res://.godot/imported/Espeto.png-f497fd2bd09671ee2ae46b46a5cd3110.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Images/Espeto.png"
-dest_files=["res://.godot/imported/Espeto.png-703813e0f35afbc7562d80888500aea3.ctex"]
+source_file="res://Assets/images/Espeto.png"
+dest_files=["res://.godot/imported/Espeto.png-f497fd2bd09671ee2ae46b46a5cd3110.ctex"]
 
 [params]
 
