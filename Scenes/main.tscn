@@ -4162,32 +4162,41 @@ player = NodePath("../Player")
 [node name="Platforms" type="Node" parent="Environment"]
 
 [node name="Platform1" type="Node2D" parent="Environment/Platforms"]
+visible = false
 position = Vector2(0, 24)
 
 [node name="Brick" parent="Environment/Platforms/Platform1" instance=ExtResource("6_vt4yb")]
+visible = false
 
 [node name="Brick2" parent="Environment/Platforms/Platform1" instance=ExtResource("6_vt4yb")]
+visible = false
 position = Vector2(32, 0)
 
 [node name="Brick3" parent="Environment/Platforms/Platform1" instance=ExtResource("6_vt4yb")]
+visible = false
 position = Vector2(64, 0)
 
 [node name="MysteryBox2" parent="Environment/Platforms/Platform1" instance=ExtResource("8_rp7hu")]
+visible = false
 position = Vector2(16, 0)
 bonus_type = 1
 
 [node name="MysteryBox3" parent="Environment/Platforms/Platform1" instance=ExtResource("8_rp7hu")]
+visible = false
 position = Vector2(48, 0)
 
 [node name="MysteryBoxes" type="Node" parent="Environment"]
 
 [node name="MysteryBox" parent="Environment/MysteryBoxes" instance=ExtResource("8_rp7hu")]
+visible = false
 position = Vector2(-72, 24)
 
 [node name="MysteryBox2" parent="Environment/MysteryBoxes" instance=ExtResource("8_rp7hu")]
+visible = false
 position = Vector2(32, -40)
 
 [node name="MysteryBox3" parent="Environment/MysteryBoxes" instance=ExtResource("8_rp7hu")]
+visible = false
 position = Vector2(576, 16)
 invisible = true
 
@@ -4197,24 +4206,22 @@ invisible = true
 position = Vector2(201, 52.5)
 scale = Vector2(2.5, 1.5)
 
-[node name="Pipe2" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
-position = Vector2(344, 40)
+[node name="Sculpture02" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
+position = Vector2(344, 52.5)
 scale = Vector2(2.5, 1.5)
-height = 64
 
-[node name="Pipe3" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
-position = Vector2(472, 24)
+[node name="Sculpture03" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
+position = Vector2(472, 52.5)
 scale = Vector2(2.5, 1.5)
-height = 100
 is_traversable = true
 
-[node name="Pipe4" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
-position = Vector2(2664, 56)
+[node name="Sculpture04" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
+position = Vector2(2664, 52.5)
 scale = Vector2(2.5, 1.5)
 
-[node name="Pipe5" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
-position = Vector2(2936, 56)
-scale = Vector2(2.50023, 0.457603)
+[node name="Sculpture05" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
+position = Vector2(2889, 52.5)
+scale = Vector2(2.5, 1.5)
 
 [node name="FallDownAreas" type="Node" parent="."]
 
@@ -4312,7 +4319,7 @@ texture = ExtResource("15_pdsj5")
 
 [node name="Hill4" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(656, 70)
+position = Vector2(647, 60)
 scale = Vector2(0.09, 0.09)
 texture = ExtResource("15_gt3je")
 
@@ -4322,7 +4329,7 @@ position = Vector2(1672, 72)
 
 [node name="Hill8" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(2645, 71)
+position = Vector2(2758, 60)
 scale = Vector2(0.09, 0.09)
 texture = ExtResource("17_ee4r6")
 
@@ -4334,7 +4341,7 @@ texture = ExtResource("15_pdsj5")
 
 [node name="Hill3" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
-position = Vector2(3277, 61)
+position = Vector2(3277, 60)
 scale = Vector2(0.09, 0.09)
 texture = ExtResource("17_ee4r6")
 
@@ -4382,7 +4389,7 @@ texture = ExtResource("15_pdsj5")
 
 [node name="Bush8" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
-position = Vector2(2204, 61)
+position = Vector2(2207, 58)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("15_gt3je")
 
