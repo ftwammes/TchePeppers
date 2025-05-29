@@ -18,6 +18,6 @@ func _ready():
 	body_sprite.position = Vector2(0, (sprite.position.y  - TOP_PIPE_HEIGHT) / -2)
 	
 	var shape = RectangleShape2D.new()
-	shape.size = Vector2(7.5, height)
+	shape.size = Vector2(7.5, 20)
 	collision_shape_2d.shape = shape
 	collision_shape_2d.position = Vector2(0, (height - TOP_PIPE_HEIGHT) / 2)
