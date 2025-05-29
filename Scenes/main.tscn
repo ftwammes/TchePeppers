@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://cy3drp5y23cr5"]
+[gd_scene load_steps=23 format=3 uid="uid://cy3drp5y23cr5"]
 
 [ext_resource type="Texture2D" uid="uid://bvxbth4upa7s8" path="res://Assets/Elements/GroundBlock.png" id="1_pdsj5"]
 [ext_resource type="Texture2D" uid="uid://8as4lix1a8pr" path="res://Assets/Sprites/HardBlock.png" id="2_enfcy"]
@@ -13,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://cq6tqakba8cj0" path="res://Assets/Sprites/Cloud1.png" id="12_7uet7"]
 [ext_resource type="Texture2D" uid="uid://clh4o85nqf188" path="res://Assets/Sprites/Cloud2.png" id="13_mpiqk"]
 [ext_resource type="Texture2D" uid="uid://brrum5522waxt" path="res://Assets/Sprites/Cloud3.png" id="14_vx0fg"]
-[ext_resource type="Texture2D" uid="uid://ldf8fweos6xc" path="res://Assets/Sprites/Hill1.png" id="15_667qv"]
 [ext_resource type="Texture2D" uid="uid://cqa0hkxo23gkv" path="res://Assets/images/Eucalipto_com_queroquero.png" id="15_gt3je"]
 [ext_resource type="Texture2D" uid="uid://bh6nfjkius1u4" path="res://Assets/images/Arbusto.png" id="15_pdsj5"]
 [ext_resource type="Texture2D" uid="uid://ddll1cc4ebus4" path="res://Assets/images/arbusto_pilchado.png" id="17_ee4r6"]
@@ -4195,22 +4194,27 @@ invisible = true
 [node name="Sculptures" type="Node" parent="Environment"]
 
 [node name="Sculpture01" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
-position = Vector2(200, 56)
+position = Vector2(201, 52.5)
+scale = Vector2(2.5, 1.5)
 
 [node name="Pipe2" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
 position = Vector2(344, 40)
+scale = Vector2(2.5, 1.5)
 height = 64
 
 [node name="Pipe3" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
 position = Vector2(472, 24)
+scale = Vector2(2.5, 1.5)
 height = 100
 is_traversable = true
 
 [node name="Pipe4" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
 position = Vector2(2664, 56)
+scale = Vector2(2.5, 1.5)
 
 [node name="Pipe5" parent="Environment/Sculptures" instance=ExtResource("5_om4pi")]
 position = Vector2(2936, 56)
+scale = Vector2(2.50023, 0.457603)
 
 [node name="FallDownAreas" type="Node" parent="."]
 
@@ -4224,7 +4228,7 @@ position = Vector2(1176, 128)
 position = Vector2(2504, 128)
 
 [node name="Flag" parent="." instance=ExtResource("11_hf8cw")]
-position = Vector2(3192, 69)
+position = Vector2(3195, 67)
 
 [node name="Decorations" type="Node" parent="."]
 
@@ -4303,7 +4307,7 @@ texture = ExtResource("14_vx0fg")
 [node name="Hill1" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
 position = Vector2(169, 72)
-scale = Vector2(0.092, 0.062)
+scale = Vector2(0.09, 0.061)
 texture = ExtResource("15_pdsj5")
 
 [node name="Hill4" type="Sprite2D" parent="Decorations/Hills"]
@@ -4315,7 +4319,6 @@ texture = ExtResource("15_gt3je")
 [node name="Hill6" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
 position = Vector2(1672, 72)
-texture = ExtResource("15_667qv")
 
 [node name="Hill8" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
@@ -4326,7 +4329,7 @@ texture = ExtResource("17_ee4r6")
 [node name="Hill2" type="Sprite2D" parent="Decorations/Hills"]
 z_index = -2
 position = Vector2(-169, 73)
-scale = Vector2(0.1045, 0.0605)
+scale = Vector2(0.09, 0.051)
 texture = ExtResource("15_pdsj5")
 
 [node name="Hill3" type="Sprite2D" parent="Decorations/Hills"]
@@ -4350,7 +4353,7 @@ position = Vector2(3296, 81)
 [node name="Bush1" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
 position = Vector2(19, 60)
-scale = Vector2(0.078, 0.09)
+scale = Vector2(0.09, 0.09)
 texture = ExtResource("17_ee4r6")
 
 [node name="Bush9" type="Sprite2D" parent="Decorations/Bushes"]
@@ -4386,7 +4389,7 @@ texture = ExtResource("15_gt3je")
 [node name="Bush3" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
 position = Vector2(-108.25, 55.875)
-scale = Vector2(0.0747548, 0.104167)
+scale = Vector2(0.065, 0.09)
 texture = ExtResource("19_ee4r6")
 
 [node name="Bush5" type="Sprite2D" parent="Decorations/Bushes"]
