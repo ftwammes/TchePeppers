@@ -1,30 +1,34 @@
 [gd_scene load_steps=5 format=3 uid="uid://bei1c0pe6xtcd"]
 
 [ext_resource type="Script" uid="uid://qs26atwxhfuu" path="res://Scripts/pipe.gd" id="1_1ohs0"]
-[ext_resource type="Texture2D" uid="uid://b5sqfy41h20ks" path="res://Assets/Sprites/PipeTop.png" id="1_66gay"]
-[ext_resource type="Texture2D" uid="uid://cdp0d1a4cvakq" path="res://Assets/Sprites/PipeBottom.png" id="2_bq4xf"]
+[ext_resource type="Texture2D" uid="uid://ci4sy1u78k0yw" path="res://Assets/images/esculturaJardim.png" id="2_hnit7"]
+[ext_resource type="Texture2D" uid="uid://cufeiopjxxsnm" path="res://Assets/images/pedestal.png" id="3_p1buf"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6n3ir"]
-size = Vector2(32, 31)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p1buf"]
+size = Vector2(9.48815, 24.2672)
 
-[node name="Pipe" type="StaticBody2D"]
+[node name="Escultura" type="StaticBody2D"]
 z_index = -1
 texture_repeat = 2
+scale = Vector2(2.95105, 1.68952)
 collision_layer = 16
 collision_mask = 5
 script = ExtResource("1_1ohs0")
 
-[node name="PipeTopSprite" type="Sprite2D" parent="."]
-position = Vector2(0, 1)
-texture = ExtResource("1_66gay")
+[node name="Sprite" type="Sprite2D" parent="."]
+z_index = 1
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("2_hnit7")
 
-[node name="PipeBodySprite" type="Sprite2D" parent="."]
-position = Vector2(0, 16)
-texture = ExtResource("2_bq4xf")
-region_enabled = true
-region_rect = Rect2(0, 0, 32, 16)
+[node name="SpriteBase" type="Sprite2D" parent="."]
+texture_repeat = 2
+position = Vector2(0, 11)
+scale = Vector2(0.0322156, 0.0262238)
+texture = ExtResource("3_p1buf")
+region_rect = Rect2(57.5, 87.75, 291.625, 443.25)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 8.5)
-shape = SubResource("RectangleShape2D_6n3ir")
+position = Vector2(-2.42373e-07, 5.031)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_p1buf")
 debug_color = Color(0.92549, 0.219608, 0.407843, 0.419608)
