@@ -291,7 +291,7 @@ metadata/_edit_horizontal_guides_ = [-16.0, 16.0]
 position = Vector2(0.249025, 0.707318)
 scale = Vector2(0.0353277, 0.0371707)
 sprite_frames = SubResource("SpriteFrames_pie86")
-animation = &"small_idle"
+animation = &"small_slide"
 script = ExtResource("25_84ua1")
 
 [node name="Area2D" type="Area2D" parent="."]

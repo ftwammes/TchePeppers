@@ -11,7 +11,7 @@ const TOP_PIPE_HEIGHT = 25.5
 @onready var body_sprite = $SpriteBase
 @onready var sprite = $Sprite
 
-func _ready():
+func _ready1():
 	var region_rect = Rect2(body_sprite.region_rect)
 	region_rect.size = Vector2(32, sprite.position.y)
 	body_sprite.region_rect = region_rect

@@ -4,7 +4,7 @@ class_name Player
 
 signal points_scored(points: int)
 signal castle_entered
-
+var endGame_Audio: AudioStreamPlayer
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 enum PlayerMode {
@@ -55,6 +55,7 @@ var is_dead = false
 var is_on_path = false
 
 func _ready():
+	endGame_Audio = get_parent().get_node("EndGame_Audio")
 	if SceneData.return_point != null && SceneData.return_point != Vector2.ZERO:
 		global_position = SceneData.return_point
 
@@ -85,7 +86,8 @@ func _physics_process(delta):
 		velocity.x = lerpf(velocity.x, speed * direction, run_speed_damping * delta)
 	else: 
 		velocity.x = move_toward(velocity.x, 0, speed * delta)
-		animated_sprite_2d.trigger_animation(velocity, direction, player_mode)
+	
+	animated_sprite_2d.trigger_animation(velocity, direction, player_mode)
 	
 	var collision = get_last_slide_collision()
 	if collision != null:
@@ -221,6 +223,7 @@ func go_to_castle():
 	run_to_castle_tween.tween_callback(finish)
 
 func finish():
+	endGame_Audio.play()
 	queue_free()
 	castle_entered.emit()
 
