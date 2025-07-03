@@ -1,11 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://b0v5df3610qok"]
+[gd_scene load_steps=8 format=3 uid="uid://b0v5df3610qok"]
 
+[ext_resource type="Script" uid="uid://drlr7whviktcm" path="res://play.gd" id="1_y08r1"]
 [ext_resource type="Texture2D" uid="uid://c83hwkswceolp" path="res://Assets/images/ChatGPT Image 8 de mai. de 2025, 20_34_52.png" id="1_yuxfv"]
 [ext_resource type="Texture2D" uid="uid://b3dbwsixsamiv" path="res://Assets/images/buttonIniciar.png" id="2_2jglr"]
 [ext_resource type="Texture2D" uid="uid://dpvjca8iwgcnq" path="res://Assets/images/buttonIniciar2.png" id="3_ca36m"]
 [ext_resource type="Script" uid="uid://dxv7d71aui8io" path="res://play_button.gd" id="4_2jglr"]
+[ext_resource type="AudioStream" uid="uid://djeyaw7osy6gd" path="res://Assets/audio/Welcome.mp3" id="6_3ib3j"]
+[ext_resource type="AudioStream" uid="uid://rfpnyid3wotr" path="res://Assets/audio/Welcome2.mp3" id="7_iu7w4"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_y08r1")
 
 [node name="Fundo" type="Sprite2D" parent="."]
 position = Vector2(578.5, 325)
@@ -20,3 +24,9 @@ offset_bottom = 201.0
 texture_normal = ExtResource("2_2jglr")
 texture_hover = ExtResource("3_ca36m")
 script = ExtResource("4_2jglr")
+
+[node name="Welcome_Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_3ib3j")
+
+[node name="Welcome_Audio2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_iu7w4")

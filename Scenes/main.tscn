@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://cy3drp5y23cr5"]
+[gd_scene load_steps=28 format=3 uid="uid://cy3drp5y23cr5"]
 
 [ext_resource type="Texture2D" uid="uid://bvxbth4upa7s8" path="res://Assets/Elements/GroundBlock.png" id="1_pdsj5"]
 [ext_resource type="Texture2D" uid="uid://8as4lix1a8pr" path="res://Assets/Sprites/HardBlock.png" id="2_enfcy"]
@@ -18,6 +18,10 @@
 [ext_resource type="Texture2D" uid="uid://ddll1cc4ebus4" path="res://Assets/images/arbusto_pilchado.png" id="17_ee4r6"]
 [ext_resource type="Texture2D" uid="uid://d4e2jnewdtsvs" path="res://Assets/images/Araucaria.png" id="19_ee4r6"]
 [ext_resource type="Texture2D" uid="uid://tmg1wxwm3k3w" path="res://Assets/images/ctg.png" id="19_fevyy"]
+[ext_resource type="AudioStream" uid="uid://dhlqw51t3cmj7" path="res://Assets/audio/background2.mp3" id="19_gt3je"]
+[ext_resource type="AudioStream" uid="uid://cuifppwkdn0p6" path="res://Assets/audio/EndGame.mp3" id="20_hibaj"]
+[ext_resource type="AudioStream" uid="uid://duq42fyc2l7ro" path="res://Assets/audio/HalfGame.mp3" id="21_ee4r6"]
+[ext_resource type="Script" uid="uid://roay40g2xkso" path="res://Scenes/half_game_trigger.gd" id="22_gt3je"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xjng"]
 texture = ExtResource("1_pdsj5")
@@ -4135,6 +4139,9 @@ _data = {
 }
 point_count = 6
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pmx8"]
+size = Vector2(20, 79)
+
 [node name="main" type="Node"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -4395,7 +4402,7 @@ texture = ExtResource("15_gt3je")
 
 [node name="Bush3" type="Sprite2D" parent="Decorations/Bushes"]
 z_index = -2
-position = Vector2(-108.25, 55.875)
+position = Vector2(-108.25, 57.875)
 scale = Vector2(0.065, 0.09)
 texture = ExtResource("19_ee4r6")
 
@@ -4428,3 +4435,27 @@ curve = SubResource("Curve2D_px65u")
 position = Vector2(0, -8)
 rotation = -0.876058
 rotates = false
+
+[node name="Background_Audio" type="AudioStreamPlayer" parent="."]
+auto_translate_mode = 2
+stream = ExtResource("19_gt3je")
+volume_db = -11.0
+autoplay = true
+parameters/looping = false
+
+[node name="EndGame_Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("20_hibaj")
+
+[node name="HalfGame_Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("21_ee4r6")
+pitch_scale = 1.1
+
+[node name="HalfGame_Trigger" type="Area2D" parent="."]
+position = Vector2(1500, 58)
+script = ExtResource("22_gt3je")
+
+[node name="CollisionHalfGame_Trigger" type="CollisionShape2D" parent="HalfGame_Trigger"]
+position = Vector2(0, -18.5)
+shape = SubResource("RectangleShape2D_3pmx8")
+
+[connection signal="area_entered" from="HalfGame_Trigger" to="HalfGame_Trigger" method="_on_area_entered"]
